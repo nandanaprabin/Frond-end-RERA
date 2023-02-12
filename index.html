@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box 
+      {
+        width: 500px;
+        height: 250px;
+        background-color: lightgrey;
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      table 
+      {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th, td 
+      {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+      th 
+      {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <title>Project RERA</title>
+  <h1 style="text-align: center;">Details required for apartment</h1>
+  <body>
+    <form>
+      <div class="box">
+        <h3>Personal Information</h3><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="guardian">Guardian:</label>
+        <input type="text" id="guardian" name="guardian" required><br><br>
+        <label for="relationship">Relationship with Guardian:</label>
+        <input type="text" id="relationship" name="relationship" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+      </div>
+      <div class="box">
+        <h3>Identification Information</h3><br>
+        <label for="aadhar">Aadhaar Number:</label>
+        <input type="text" id="aadhar" name="aadhar" required><br><br>
+        <label for="pan">PAN Number:</label>
+        <input type="text" id="pan" name="pan" required><br><br>
+      </div>
+      <div class="box">
+        <h3>Contact Information</h3><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        <label for="apartment">Apartment Number:</label>
+        <input type="text" id="apartment" name="apartment" required><br><br>
+      </div>
+      <table>
+        <tr>
+          <th>Built-up Area</th>
+          <th>Total Area</th>
+          <th>Roadway</th>
+          <th>Address of building</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="built-up-area" name="built-up-area"></td>
+          <td><input type="text" id="total-area" name="total-area"></td>
+          <td><input type="text" id="road" name="road"></td>
+          <td><input type="text" id="address" name="address"></td>
+        </tr>
+      </table>
+    <div class="box">
+        <h3>Architect details</h3><br>
+        <label for="name">Name of architect firm:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Name of architect:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="register">Register no: of architect:</label>
+        <input type="text" id="register" name="register" required><br><br>
+    </div>
+    </form>
+  </body>
+</html>
